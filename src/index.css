@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); 
+ 
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+  
+  
+ }
+ body{
+    /* background-color:#312c7a; */
+    background:url(https://img.freepik.com/free-vector/black-abstract-background_1393-348.jpg?w=826&t=st=1715433084~exp=1715433684~hmac=4f066c500e78cfa9806db9680c34a5e1399a99cc60ae3af64af550c8508eeb61);
+    background-position: center;
+    background-size:cover;
+ }
+
+ #root{
+  min-height: 100vh;
+  display: flex;
+
+ }

@@ -1,0 +1,230 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+
+    position: relative;
+
+}
+
+.main .nav {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-top: 5px;
+    color: #585858;
+}
+.main .nav p{
+    font-size: 40px;
+}
+
+.main .nav img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.main .greet {
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.main .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   
+    gap: 15px;
+    padding: 20px;
+
+}
+
+.main .card {
+    background-color: transparent;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+    cursor: pointer;
+    position: relative;
+    box-shadow: 10px 10px 10px    /* background-color: #f0f4f9; */
+}
+
+.main .card img {
+    position: absolute;
+    width: 35px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+
+
+}
+
+.main .card p {
+    font-size: 17px;
+    color:white;
+    font-weight: 500;
+}
+
+.main .cards :hover {
+    /* background-color: #ff5546; */
+    /* color: wheat; */
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+}
+
+
+.mainbottom {
+    position: absolute;
+    ;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+  
+
+}
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    gap: 20px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    
+}
+
+.searchbox img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.searchbox input {
+    border: none;
+    
+    outline: none;
+    font-size: 18px;
+    padding: 8px;
+    background: transparent;
+    flex: 1;
+}
+
+.searchbox div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .bottominfo span {
+   
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .bottominfo{
+    font-size: 30px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.result{
+    margin-top:30px;
+    border-radius: 50px;
+    /* background-color:#5eb572 ; */
+    background-color: wheat;
+    padding: 0px 5%;
+    min-height:70vh;
+    text-align: justify;
+    overflow: scroll;
+    height:100px;
+    /* color: wheat; */
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.result img{
+    margin-top: 20px;
+    border-radius: 50%;
+    width:40px;
+}
+
+
+
+
+.result .result-title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.loader{
+    
+
+width: 100%;
+display: flex;
+flex-direction: column;;
+gap:10px;
+
+}
+.loader hr{
+    border-radius:4px ;
+    border: none;
+    background-color:#f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size:800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+
+}
+
+@keyframes loader{
+    0%{
+background-position: -800PX;
+}
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
